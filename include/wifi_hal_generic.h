@@ -1347,6 +1347,16 @@ INT wifi_startHostApd();
  */
 INT wifi_stopHostApd();
 
+/**
+ * @brief Gets regulatory domain info.
+ *
+ * @returns The status of the operation.
+ * @retval WIFI_HAL_SUCCESS If successful.
+ * @retval WIFI_HAL_ERROR   If any error is detected.
+ */
+
+BOOL wifi_getRegDomain(INT radioIndex, UINT *reg_domain);
+
 /** @} */  //END OF GROUP WIFI_HAL_APIS
 
 #ifdef __cplusplus
